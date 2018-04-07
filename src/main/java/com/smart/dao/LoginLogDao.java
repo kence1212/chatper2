@@ -10,6 +10,7 @@ public class LoginLogDao {
     private final static String INSERT_LOG_SQL = "INSERT INTO t_login_log(user_id,ip,login_datetime)" +
             "VALUES(?,?,?)";
     public void insertLoginLog(Loginlog loginLog){
-
+        Object[] args = {loginLog.getUserId(),loginLog.getIp(),loginLog.
+                getLoginDate()};
     }
 }
