@@ -12,7 +12,7 @@ import static org.testng.Assert.*;
 @ContextConfiguration(locations= {"classpath*:smart-context.xml"})
 @RunWith(SpringJUnit4ClassRunner.class)
 public class UserServiceTest extends AbstractTransactionalTestNGSpringContextTests{
-    private UserService userService;
+    private UserService userService; 
 
     @Autowired
     public void setUserService(UserService userService) {
