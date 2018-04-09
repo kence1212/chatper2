@@ -15,10 +15,13 @@ import java.sql.SQLException;
 @Repository
 public class UserDao {
     private JdbcTemplate jdbcTemplate;
-    private final static String MATCH_COUNT_SQL = "SELECT count(1) FROM t_user"
+
+    private final static String MATCH_COUNT_SQL = "SELECT count(1) FROM t_user "
         + "WHERE user_name = ? and password = ?";
+
     private final static String UPDATE_LOGIN_INFO_SQL = "UPDATE t_user SET" +
             " last_visit = ?,last_ip = ?,credits = ? WHERE user_id = ?";
+
     private final static String QUERY_BY_USERNAME = "SELECT user_id,user_name,credits "
             + "FROM t_user WHERE user_name = ?";
 
