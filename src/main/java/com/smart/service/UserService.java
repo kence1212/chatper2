@@ -42,4 +42,8 @@ public class UserService {
         userDao.updateLoginInfo(user);
         loginLogDao.insertLoginLog(loginlog);
     }
+
+    public static void main(String[] args){
+
+    }
 }
