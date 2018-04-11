@@ -43,7 +43,4 @@ public class UserService {
         loginLogDao.insertLoginLog(loginlog);
     }
 
-    public static void main(String[] args){
-
-    }
 }

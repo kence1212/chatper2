@@ -5,7 +5,7 @@ import java.util.Date;
 
 public class User implements Serializable{
     private int userId;
-    private String username;
+    private String userName;
     private String password;
     private int credits;
     private String lastIp;
@@ -15,8 +15,8 @@ public class User implements Serializable{
         return userId;
     }
 
-    public String getUsername() {
-        return username;
+    public String getUserName() {
+        return userName;
     }
 
     public String getPassword() {
@@ -39,8 +39,8 @@ public class User implements Serializable{
         this.userId = userId;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public void setPassword(String password) {

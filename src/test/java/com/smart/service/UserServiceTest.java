@@ -30,6 +30,6 @@ public class UserServiceTest extends AbstractTransactionalTestNGSpringContextTes
     @Test
     public void findUserbyUserName(){
         User user = userService.findUserByUserName("admin");
-        assertEquals(user.getUsername(),"admin");
+        assertEquals(user.getUserName(),"admin");
     }
 }

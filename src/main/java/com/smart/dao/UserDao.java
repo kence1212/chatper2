@@ -39,7 +39,7 @@ public class UserDao {
         jdbcTemplate.query(QUERY_BY_USERNAME, new Object[]{userName}, new RowCallbackHandler() {
             public void processRow(ResultSet rs) throws SQLException {
                 user.setUserId(rs.getInt("user_id"));
-                user.setUsername(userName);
+                user.setUserName(userName);
                 user.setCredits(rs.getInt("credits"));
             }
         });
